@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <title>Title</title>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/tagsinput/tagsinput.css" />
+</head>
+<body style="width: 500px; margin: 0 auto;padding: 9px">
+
+    <div class="container row form-group" id="fb">
+        <input type="text"  class=" form-control" name="fburl">
+        <input type="number" min="7" placeholder="keep it `0` to not set ifnore" class=" form-control" name="limit">
+        <input type="text" data-role="tagsinput" placeholder="keywords to ignore posts" class=" form-control" name="ignore">
+        <input type="text" placeholder="HTML-DOM" class="  form-control" name="dom">
+        <button id="fburl"  class="btn col-5 btn-primary" type="button">Re post</button>
+    </div>
+    <div class="container" id="insta" disabled=""></div>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--    <div id="fb"></div>-->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/tagsinput/tagsinput.js"></script>
+    <script src="popup.js"></script>
+    <script src="index.js"></script>
+
+<!--    <script src="index.js"></script>-->
+
+</body>
+</html>

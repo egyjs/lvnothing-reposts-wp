@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Mr.RePosts",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/",
+    "https://*/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["lib/jquery.min.js","popup.js","index.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {                    
+      "16": "images/logo16.png",
+      "24": "images/logo24.png",
+      "32": "images/logo32.png"
+    },
+    "default_title": "Do Re post",
+    "default_popup":"popup.html"
+  }
+}
